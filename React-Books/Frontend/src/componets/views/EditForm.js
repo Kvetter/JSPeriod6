@@ -1,5 +1,5 @@
 import React from 'react'
-import './../models/BookStore'
+import './../../models/BookStore'
 import {Link} from 'react-router-dom'
 import {observer} from 'mobx-react'
 

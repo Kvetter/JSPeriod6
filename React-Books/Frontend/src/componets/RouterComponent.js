@@ -1,10 +1,10 @@
 import React from 'react'
 import {Component } from 'react'
-import Home from './Home'
-import Blog from './Blog'
-import Product from './Product'
-import Details from './Details'
-import LoginStatus from './LoginStatus'
+import Home from './views/Home'
+import Blog from './views/Blog'
+import Product from './views/Product'
+import Details from './views/Details'
+import LoginStatus from './views/LoginStatus'
 import {observer} from 'mobx-react'
 import {
   BrowserRouter as Router,
@@ -14,7 +14,7 @@ import {
   Link,
   NavLink
 } from 'react-router-dom'
-import NoMatch404 from './NoMatch404'
+import NoMatch404 from './views/NoMatch404'
 
 @observer
 class RouterComponent extends Component{

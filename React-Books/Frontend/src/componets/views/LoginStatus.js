@@ -1,5 +1,5 @@
 import React from 'react'
-import Auth from './../models/Auth'
+import Auth from './../../models/Auth'
 
 const LoginStatus = () =>{
 
