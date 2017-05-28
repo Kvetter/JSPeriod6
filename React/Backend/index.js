@@ -8,9 +8,8 @@ var JwtStrategy = passportJWT.Strategy;
 var JWT  = require('jsonwebtoken')
 var bodyParser = require('body-parser');
 var userFacade = require('./userFacade')
-var helmet = require('helmet')
 var port = 8000
-var Secret = "1234" //should be kept in a file that should be in the .gitignore
+var Secret = "1234" //should be kept in a file that should't be on github
 
 
 //Follow guide to do this
@@ -33,7 +32,6 @@ var strategy = new JwtStrategy(jwtOptions, function(jwt_payload, next) {
         next(null,false)
     }
 });
-app.use(helmet());
 
 passport.use(strategy);
 app.use(passport.initialize());
